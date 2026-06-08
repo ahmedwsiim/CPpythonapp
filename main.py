@@ -13,11 +13,11 @@ HTML_TEMPLATE = """
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0f172a;
-            --glass-bg: rgba(30, 41, 59, 0.7);
+            --bg-color: #170f2a;
+            --glass-bg: rgba(41, 30, 59, 0.7);
             --glass-border: rgba(255, 255, 255, 0.1);
-            --primary: #38bdf8;
-            --secondary: #818cf8;
+            --primary: #c026d3;
+            --secondary: #ec4899;
             --success: #34d399;
             --warning: #fbbf24;
             --danger: #ef4444;
@@ -189,13 +189,13 @@ HTML_TEMPLATE = """
             transform: translateY(1px);
         }
 
-        .fill-cpu { background: linear-gradient(90deg, #38bdf8, #818cf8); }
-        .fill-ram { background: linear-gradient(90deg, #34d399, #10b981); }
-        .fill-disk { background: linear-gradient(90deg, #f472b6, #e11d48); }
+        .fill-cpu { background: linear-gradient(90deg, #c026d3, #ec4899); }
+        .fill-ram { background: linear-gradient(90deg, #ec4899, #f43f5e); }
+        .fill-disk { background: linear-gradient(90deg, #f43f5e, #f97316); }
         
-        .icon-cpu svg { stroke: #818cf8; }
-        .icon-ram svg { stroke: #34d399; }
-        .icon-disk svg { stroke: #f472b6; }
+        .icon-cpu svg { stroke: #ec4899; }
+        .icon-ram svg { stroke: #f43f5e; }
+        .icon-disk svg { stroke: #f97316; }
     </style>
 </head>
 <body>
