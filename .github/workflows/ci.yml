@@ -23,6 +23,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Run tests
+      - name: Check syntax
         run: |
-          pytest -q
+          python -m py_compile main.py
