@@ -1,2 +1,3 @@
 #!/bin/bash
-pkill -f main.py || true
+# Gracefully stop sysmon service
+systemctl stop sysmon || true

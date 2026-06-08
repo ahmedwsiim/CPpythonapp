@@ -1,4 +1,10 @@
 #!/bin/bash
-cd /home/ubuntu/sysmon-app
-source venv/bin/activate
-nohup python3 main.py > app.log 2>&1 &
+set -e
+
+# Copy sysmon.service to systemd
+cp /home/ubuntu/sysmon-app/sysmon.service /etc/systemd/system/
+
+# Reload and start service
+systemctl daemon-reload
+systemctl enable sysmon
+systemctl restart sysmon
