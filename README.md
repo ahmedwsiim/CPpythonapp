@@ -1,4 +1,4 @@
-# True Flask App
+# Minimal Flask App
 
 This repository contains a minimal, clean Flask application with a small frontend, tests, and a GitHub Actions CI workflow.
 
