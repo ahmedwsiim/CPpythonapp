@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /home/ubuntu/sysmon-app
+    overwrite: true
 permissions:
   - object: /home/ubuntu/sysmon-app
     pattern: "**"
@@ -20,7 +21,7 @@ hooks:
   AfterInstall:
     - location: scripts/install_python_deps.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStart:
     - location: scripts/start_app.sh
       timeout: 300
